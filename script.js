@@ -6,7 +6,7 @@ document.querySelectorAll('.social ul li').forEach(item => {
         const links = {
             facebook: 'https://www.facebook.com/profile.php?id=100071448600492',
             envelope: 'mailto:odeydivine16@email.com',
-            linkedin: 'www.linkedin.com/in/odey-divine'
+            linkedin: 'https://www.linkedin.com/in/odey-divine'
         };
         
         if (links[platform]) {
