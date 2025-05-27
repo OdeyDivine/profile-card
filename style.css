@@ -1,0 +1,68 @@
+ :root{
+    --primary-color: #f6ebeb;
+    --secondary-color: white;
+    --font-color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body > * {
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .card{
+        align-items: center;
+        text-align: center;
+        border-radius: 30px;
+        width: 90%;
+        display: block;
+        justify-self: center;
+        margin-top: 30px;
+        background-color: var(--secondary-color);
+    }
+
+    .middle {
+        line-height: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    img{
+        margin-top: 7px;
+        padding-top: 10px;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 95%;
+        background-color: rgb(172, 193, 245);
+    }
+    .social ul{
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    list-style: none;
+    padding: 0; 
+    margin: 20px 0;
+    }
+    .social ul li {
+    padding: 0; 
+    font-size: 24px; 
+    transition: transform 0.3s ease; 
+    }
+}  
+ 
+@media screen and (min-width: 1181px) {
+    body::before {
+        content: "This design is optimized for mobile/tablet. Please view on a smaller screen (≤1180px).";
+        display: block;
+        text-align: center;
+        padding: 50px;
+        color: rgb(254, 11, 11);
+        font-weight: bolder;
+    }
+}
